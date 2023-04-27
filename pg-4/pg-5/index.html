@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen - Payment Link</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="paymentlink">
+  <div class="separator">  
+    <img src="data:image/png;base64,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" class="icon">
+  </div>
+  
+<table>
+  <tr>
+    <td>
+  <div class="svg-box">
+                <svg class="circular green-stroke">
+                    <circle class="path" cx="75" cy="75" r="50" fill="none" stroke-width="5" stroke-miterlimit="10"/>
+                </svg>
+                <svg class="checkmark green-stroke">
+                    <g transform="matrix(0.79961,8.65821e-32,8.39584e-32,0.79961,-489.57,-205.679)">
+                        <path class="checkmark__check" fill="none" d="M616.306,283.025L634.087,300.805L673.361,261.53"/>
+                    </g>
+                </svg>
+            </div>
+    </td>
+    <td>
+  <h1 class="title">Pedido feito com Sucesso</h1>
+    </td>
+  </tr>
+  </table>
+
+  
+  <p class="center">Tudo certo! Estamos analisando cuidadosamente as informações fornecidas e em instantes enviaremos a confirmação da aprovação do seu pedido.</p>
+      
+  <table class="details">
+    <tr>
+      <td>
+        <div class="header">
+          Metodo de Pagamento
+        </div>
+        <div class="content">
+          <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/logos/mastercard.svg?sanitize=true" style="height:20px;">**** xxxx xxxx ****
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="header">
+          Cash Back
+        </div>
+        <div class="content">
+          5%
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="header">
+          Nº do Pedido:
+        </div>
+        <div class="content">
+          6853
+        </div>
+      </div>
+
+      <button class="card-form__button" onclick="window.location.href='pg-2/pg-4/pg-3/pg-2/pg-1/index.html'">
+        Finalizar
+      </button>
+      
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
